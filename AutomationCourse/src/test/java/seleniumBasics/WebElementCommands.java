@@ -14,6 +14,8 @@ public class WebElementCommands extends Base{
 		  textbox.sendKeys("Reshma");
 		  WebElement showmessagebutton = driver.findElement(By.id("button-one"));
 		  showmessagebutton.click();
+		  System.out.println(showmessagebutton.isDisplayed());
+		  System.out.println(showmessagebutton.isEnabled());
 		  WebElement text = driver.findElement(By.id("message-one"));
 		  System.out.println(text.getText());
 		  System.out.println(text.getTagName());

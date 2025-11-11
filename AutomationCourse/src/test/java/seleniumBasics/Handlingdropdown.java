@@ -18,6 +18,7 @@ public class Handlingdropdown extends Base{
 		driver.navigate().to("https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 		WebElement checkBox = driver.findElement(By.xpath("//input[@value='option-2']"));
 		checkBox.click();
+		System.out.println(checkBox.isSelected());
 	}
 	
 	public void VerifyRadiobutton() {
