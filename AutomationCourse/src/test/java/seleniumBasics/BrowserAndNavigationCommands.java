@@ -2,9 +2,9 @@ package seleniumBasics;
 
 public class BrowserAndNavigationCommands extends Base{
 	public void browserCommands() {
-		String title = driver.getTitle();
+		String title = driver.getTitle();   // to get title
 		System.out.println(title);
-		String url = driver.getCurrentUrl();
+		String url = driver.getCurrentUrl();    // to get url
 		System.out.println(url);
 		String id = driver.getWindowHandle();
 		System.out.println(id);

@@ -9,11 +9,11 @@ public class Base {
       public void initializeBrowser() {
     	  driver = new ChromeDriver();
     	  driver.get("https://selenium.qabible.in/");
-    	  driver.manage().window().maximize();
+    	  driver.manage().window().maximize();     // to maximize window
       }
       public void browserQuitAndClose() {
-    	 // driver.close();
-    	  driver.quit();
+    	 // driver.close();   // close window
+    	 // driver.quit();     // closes all the windows
       }
      
 	public static void main(String[] args) {
