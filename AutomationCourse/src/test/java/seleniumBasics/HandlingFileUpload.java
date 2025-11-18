@@ -28,6 +28,10 @@ public class HandlingFileUpload extends Base{
         	   fileupload1.click();
         	   StringSelection se = new StringSelection("C:\\Users\\user\\git\\SeleniumAutomation\\AutomationCourse\\src\\test\\resources\\Accounting_Fundamentals.pdf");
         	   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(se, null);   //copy to clipboard, null = clipboard ownership
+        	   //Toolkit.getDefaultToolkit() → gets access to the system tools
+        	   //.getSystemClipboard() → gets the system clipboard
+        	   //.setContents(se, null) → copies the se string to the clipboard.
+        	   //By passing null, you are saying we do not need to track clipboard ownership.
         	   Robot r=new Robot();
        		r.delay(2500);
        		r.keyPress(KeyEvent.VK_ENTER);

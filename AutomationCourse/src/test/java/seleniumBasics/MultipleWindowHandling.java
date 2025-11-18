@@ -14,10 +14,10 @@ public class MultipleWindowHandling extends Base{
         	  clickhere.click();
         	  Set<String> handleid = driver.getWindowHandles();
         	  Iterator<String> it = handleid.iterator();
-        	  while(it.hasNext()){
-        		  String currentid = it.next();
-        		  if(!currentid.equals(parentid)) {
-        			  driver.switchTo().window(currentid);
+        	  while(it.hasNext()){      
+        		  String currentid = it.next();   //retrieve next element
+        		  if(!currentid.equals(parentid)) {       //currentid not equal to parentid
+        			  driver.switchTo().window(currentid);   //switches selenium control
         			  WebElement email = driver.findElement(By.name("emailid"));
         			  email.sendKeys("demo@gmail.com");
         			  WebElement submit = driver.findElement(By.name("btnLogin"));
