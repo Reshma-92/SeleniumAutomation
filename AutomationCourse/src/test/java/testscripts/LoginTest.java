@@ -4,8 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import seleniumBasics.DemoBase;
+
 public class LoginTest extends DemoBase{
-	 /*   @Test
+	   @Test
     public void verifyWhetherUserIsAbleToLoginWithValidCredentials() {
     	   WebElement username = driver.findElement(By.id("user-name"));
     	   username.sendKeys("standard_user");
@@ -15,10 +17,10 @@ public class LoginTest extends DemoBase{
     	   
     	   WebElement loginbutton = driver.findElement(By.id("login-button"));
     	   loginbutton.click();
-    	   }*/
+    	   }
 	   
-	 /*  @Test
-	   public void verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword() {
+	  @Test
+	   public void verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword1() {
 		   WebElement username = driver.findElement(By.id("user-name"));
     	   username.sendKeys("standarduser");
     	   
@@ -27,9 +29,9 @@ public class LoginTest extends DemoBase{
     	   
     	   WebElement loginbutton = driver.findElement(By.id("login-button"));
     	   loginbutton.click();
-	   }*/
+	   }
 	
-	  /* @Test
+	   @Test
 	   public void verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword() {
 		   WebElement username = driver.findElement(By.id("user-name"));
     	   username.sendKeys("standard_user");
@@ -39,7 +41,7 @@ public class LoginTest extends DemoBase{
     	   
     	   WebElement loginbutton = driver.findElement(By.id("login-button"));
     	   loginbutton.click();
-	   }*/
+	   }
 	   
 	   @Test
 	   public void verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword() {
