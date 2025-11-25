@@ -17,12 +17,12 @@ public class LoginPage {
       @FindBy(id="password") WebElement password;
       @FindBy(id="login-button") WebElement loginbutton;
       
-      public void enterUserNameOnUserNameField() {
-  		username.sendKeys("standard_user");
-  	}
-  	public void enterPasswordOnPasswordField() {
-  		password.sendKeys("secret_sauce");
-  	}
+      public void enterUserNameOnUserNameFeild(String usernamevalue) {
+     	 username.sendKeys(usernamevalue);
+      }
+      public void enterPasswordOnPasswordFeild(String passwordvalue) {
+     	 password.sendKeys(passwordvalue);
+      }
   	public void loginButtonClick() {
   		loginbutton.click();
   	}
